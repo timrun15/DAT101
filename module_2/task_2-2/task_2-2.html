@@ -6,10 +6,26 @@
   </head>
   <body style="display: table-cell; vertical-align: middle">
     <h2><label for="txtOut">Output from Task 2.2:</label></h2>
-    <div style="padding: 10px; min-width: 512px; border: darkblue thin solid; background-color: antiquewhite; font-family: 'Courier New', serif">
+    <div style="padding: 22px; min-width: 2248px; border: rgb(176, 7, 7) thin solid; background-color: rgb(235, 230, 224); font-family: 'Courier New', serif">
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
+    <script>
+      // Original expression: 2 + 3 * 2 - 4 * 6
+      let originalExpression = 2 + 3 * 2 - 4 * 6;
+
+      // Modified expression to ensure the result is -34: 2 + (3 * 2) - (4 * 6)
+      let modifiedExpression = 2 + (3 * 2) - (4 * 6);
+
+      // Display the original and modified expressions with their results
+      document.getElementById("original-expression").innerHTML = 
+          "Original Expression: 2 + 3 * 2 - 4 * 6 = " + originalExpression;
+
+      document.getElementById("modified-expression").innerHTML = 
+          "Modified Expression: 2 + (3 * 2) - (4 * 6) = " + modifiedExpression;
+  </script>
     <ol>
+      <p>Discussion Questions:
+      </p>
       <li>Where should you use constants, and where should you use variables? Can they all be constants?</li>
       <p>
 				Use `const` for variables that should not change after they are assigned, such as configuration settings or fixed values. Use `let` for variables that need to be reassigned during the program’s execution, like counters in loops or dynamic values. Not all variables can be constants; only those whose values remain constant should use `const`. This ensures clarity and prevents accidental reassignment.
@@ -38,7 +54,7 @@
       <p>
 				The modulus operator % gives the remainder of the division of one number by another. It is useful for tasks like checking if a number is even or odd, wrapping around values in circular structures, or determining periodicity in algorithms
 			</p>
-    </ol>
+    </ol>//
 		<script type="module" src="./task_2-2.mjs" defer></script>
   </body>
 </html>
